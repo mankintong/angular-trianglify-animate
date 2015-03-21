@@ -2,7 +2,7 @@
  * Angular Trianglify Animate
  * github: https://github.com/machei/angular-trianglify-animate
  * @author: machei
- * @modified: Thomas Tong, Bonifier Co. (http://bonifier.com.hk)
+ * @modified: Bonifier Co. (http://bonifier.com.hk)
  * @thanks: grohlf & empathetic-alligator
  */
 
@@ -65,9 +65,9 @@ angular.module('moduleTrianglifyAnimate', [])
                     	var w = $e.clientWidth ? $e.clientWidth : document.body.clientWidth;
                     	var h = $e.clientHeight ? $e.clientHeight : document.body.clientHeight;
 
-                    	if($attrs['posrefid']) {
-                    		w = document.getElementById($attrs['posrefid']).clientWidth;
-                    		h = document.getElementById($attrs['posrefid']).clientHeight;
+                    	if($attrs['posRefId']) {
+                    		w = document.getElementById($attrs['posRefId']).clientWidth;
+                    		h = document.getElementById($attrs['posRefId']).clientHeight;
                     	}
 
                         var pattern = t.generate(w, h);
@@ -199,7 +199,6 @@ angular.module('moduleTrianglifyAnimate', [])
                 $scope.animate = $interval(function() {
                     animate()
                 }, 10 / $scope.speed, false);
-
             }]
         };
     }]);
